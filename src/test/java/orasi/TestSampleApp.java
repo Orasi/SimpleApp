@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 public class TestSampleApp {
     WebDriver driver = null;
-    private String gridURL = "http://" + System.getProperty("gridHost") + ":" + System.getProperty("gridPort") + "/wd/hub"; //"http://10.238.242.55:4444/wd/hub";
+    private String gridURL = "http://" + System.getProperty("gridHost") + ":" + System.getProperty("gridPort") + "/wd/hub"; 
     private String testURL = "http://ec2-54-81-222-88.compute-1.amazonaws.com:8085/SimpleWeb/";
     private WebDriverWait wait = null;
     
