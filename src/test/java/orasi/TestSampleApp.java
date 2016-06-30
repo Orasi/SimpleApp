@@ -34,7 +34,7 @@ public class TestSampleApp {
 	Reporter.log("Step 2: Get Jenkins Build Number<br/>");
 	String buildNumber = driver.findElement(By.xpath("//*[contains(text(),'This is from Jenkins')]")).getText();
 	buildNumber = buildNumber.replace("This is from Jenkins build number ", "");
-	int number = Integer.parseInt(buildNumber);
+	int number = Integer.parseInt(buildNumber); // Use to ensure only number is remaining
 	Reporter.log("Step 2: Success - Build number [" + buildNumber + "] was found.<br/><br/>");
 	
 	Reporter.log("Step 3: Validate 'Get Current Time' button works<br/>");	
